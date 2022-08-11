@@ -38,7 +38,11 @@ console.log("2.", justNames)
 
 // 3. Sort the inventors by birthdate, from those born furthest in the past to those born most recently.
 
+oldestToYoungest = inventors.sort((a, b) => {
+  return a.year - b.year
+})
 
+console.log("3.", inventors)
 
 // 4. Sort the inventors by years lived from shortest to longest-lived.
 
