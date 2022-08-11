@@ -48,7 +48,16 @@ console.log("3.", inventorsCopyOne)
 
 // 4. Sort the inventors by years lived from shortest to longest-lived.
 
+const inventorsCopyTwo = [...inventors]
 
+yearsLived = inventorsCopyTwo.sort((a, b) => {
+  ageOne = a.passed - a.year
+  ageTwo = b.passed - b.year
+  
+  return ageOne - ageTwo
+})
+
+console.log("4.", inventorsCopyTwo)
 
 // Array.prototype.reduce()
 // 5. Find how many years all the inventors lived combined.
