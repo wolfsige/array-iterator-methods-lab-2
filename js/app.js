@@ -17,6 +17,13 @@ const inventors = [
 // Array.prototype.filter()
 // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's.
 
+const oldDudesOne = inventors.filter(inventor => {
+  if(inventor.year > 1499 && inventor.year < 1599){
+    return true
+  }
+  return false
+})
+console.log(oldDudesOne)
 
 
 // Array.prototype.map()
