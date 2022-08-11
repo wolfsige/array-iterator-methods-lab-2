@@ -23,12 +23,17 @@ const oldDudesOne = inventors.filter(inventor => {
   }
   return false
 })
-console.log(oldDudesOne)
+console.log("1.", oldDudesOne)
 
 
 // Array.prototype.map()
 // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties.
 
+justNames = inventors.map(inventor => {
+  return {first: inventor.first, last: inventor.last}
+})
+
+console.log("2.", justNames)
 
 
 // 3. Sort the inventors by birthdate, from those born furthest in the past to those born most recently.
