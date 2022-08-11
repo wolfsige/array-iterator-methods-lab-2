@@ -94,6 +94,12 @@ const people = [
 
 
 
+const noComma = people.map(name => {
+  return name.split(', ').reverse().join(' ')
+})
+console.log(noComma)
+
+
 const data = [
   'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
   'bike', 'walk', 'car', 'van', 'car', 'truck'
