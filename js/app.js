@@ -62,6 +62,17 @@ console.log("4.", inventorsCopyTwo)
 // Array.prototype.reduce()
 // 5. Find how many years all the inventors lived combined.
 
+const inventorsCopyThree = [...inventors]
+
+let allAges = []
+
+inventorsCopyThree.forEach(inventor => {
+  sum = inventor.passed - inventor.year
+  allAges.push(sum)
+});
+
+const allAgesSum = allAges.reduce((a, b) => a + b, 0)
+console.log("5.", allAgesSum)
 
 
 const people = [
