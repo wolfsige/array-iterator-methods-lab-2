@@ -109,7 +109,13 @@ const data = [
 // 7. Count the number of instances for each of the data items.
 // Hint: Return an object where the keys are 'car', 'truck', etc., and the value is the total number of times each data item appears.
 
+const sameData = data.reduce((allData, data) => {
+  allData[data] ??= 0
+  allData[data]++
+  return allData
+}, {})
 
+console.log(sameData)
 
 const devs = [
   { name: 'Wes', year: 1988 },
