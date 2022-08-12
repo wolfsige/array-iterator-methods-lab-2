@@ -97,7 +97,7 @@ const people = [
 const noComma = people.map(name => {
   return name.split(', ').reverse().join(' ')
 })
-console.log(noComma)
+console.log("6.", noComma)
 
 
 const data = [
