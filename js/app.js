@@ -115,7 +115,7 @@ const sameData = data.reduce((allData, data) => {
   return allData
 }, {})
 
-console.log(sameData)
+console.log("7.", sameData)
 
 const devs = [
   { name: 'Wes', year: 1988 },
