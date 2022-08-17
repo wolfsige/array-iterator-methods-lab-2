@@ -115,6 +115,7 @@ const sameData = data.reduce((allData, data) => {
   return allData
 }, {})
 
+
 // const sameData = data.reduce((allData, data) => {
 //   allData[data] = allData[data] ? allData[data] + 1 : 1
 // }, {})
