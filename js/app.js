@@ -133,6 +133,8 @@ const devs = [
 // Array.prototype.some()
 // 8. Check if at least one person is 19 or older.
 
+const thisYear = new Date().getFullYear()
+
 const oneOver19 = devs.some(dev => thisYear - dev.year >= 19)
 
 console.log("8.", oneOver19)
