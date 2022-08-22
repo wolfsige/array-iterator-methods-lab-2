@@ -142,7 +142,9 @@ console.log("8.", oneOver19)
 // Array.prototype.every()
 // 9. Check if everyone is 19 or older.
 
+const allOver19 = devs.some(dev => thisYear - dev.year === 19)
 
+console.log("9.", allOver19)
 
 const comments = [
   { text: 'Love this!', id: 523423 },
